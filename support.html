@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — PokerSplit</title>
+<meta name="description" content="Help and contact for PokerSplit.">
+<link rel="icon" href="icon.png">
+<style>
+  :root{
+    --bg:#f6f3e8; --surface:#fffdf6; --surface-2:#efe9d6;
+    --ink:#1d2620; --muted:#5a6459; --faint:#737c6f;
+    --line:#e6dfc9; --line-strong:#d3c9a9;
+    --accent:#b8902f; --accent-deep:#0c5a36; --accent-soft:#e8f1e6;
+    --radius:14px; color-scheme:light dark;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#07261a; --surface:#0e3626; --surface-2:#14432f; --ink:#f6efdb; --muted:#b9c7b6; --faint:#93a592;
+      --line:#1b4a35; --line-strong:#2b6148; --accent:#d9b457; --accent-deep:#ecce7e; --accent-soft:#123f2c;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#07261a; --surface:#0e3626; --surface-2:#14432f; --ink:#f6efdb; --muted:#b9c7b6; --faint:#93a592;
+    --line:#1b4a35; --line-strong:#2b6148; --accent:#d9b457; --accent-deep:#ecce7e; --accent-soft:#123f2c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:16.5px; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:720px; margin:0 auto; padding:0 22px 88px}
+  header{padding:52px 0 22px}
+  .eyebrow{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12px;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--accent-deep); font-weight:600; margin:0 0 12px}
+  h1{font-size:clamp(28px,5vw,36px); letter-spacing:-.02em; margin:0 0 10px; font-weight:800; text-wrap:balance}
+  .lede{color:var(--muted); font-size:17px; margin:0; max-width:60ch}
+
+  .contact{display:flex; flex-wrap:wrap; gap:12px; margin:26px 0 6px}
+  .contact a{flex:1; min-width:220px; display:block; text-decoration:none; color:inherit;
+    background:var(--surface); border:1px solid var(--line-strong); border-radius:var(--radius);
+    padding:16px 18px; transition:border-color .18s ease}
+  .contact a:hover{border-color:var(--accent)}
+  .contact .k{font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--faint); margin:0 0 4px}
+  .contact .v{font-size:17px; font-weight:700; color:var(--accent-deep); margin:0}
+  .contact .s{font-size:13px; color:var(--muted); margin:4px 0 0}
+
+  h2.sec{font-size:21px; margin:42px 0 14px; font-weight:750; letter-spacing:-.01em}
+  details{background:var(--surface); border:1px solid var(--line); border-radius:12px;
+    margin:9px 0; padding:2px 4px; overflow:hidden}
+  details[open]{border-color:var(--line-strong)}
+  summary{cursor:pointer; list-style:none; padding:14px 16px; font-weight:650; font-size:16px;
+    display:flex; justify-content:space-between; align-items:center; gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+"; color:var(--accent); font-weight:700; font-size:20px; line-height:1; flex:0 0 auto}
+  details[open] summary::after{content:"–"}
+  summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:8px}
+  .ans{padding:0 16px 15px; color:var(--muted); font-size:15.5px}
+  .ans p{margin:8px 0}
+  .ans strong{color:var(--ink)}
+  a.link{color:var(--accent-deep); text-decoration:none; border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
+  a.link:hover{border-bottom-color:var(--accent)}
+  footer{margin-top:48px; padding-top:22px; border-top:1px solid var(--line); color:var(--faint); font-size:13px}
+  footer a{color:var(--accent-deep)}
+
+  h1{font-family:"New York","Iowan Old Style",Georgia,serif}
+  .icon{width:112px; height:112px; border-radius:25px; display:block; margin:0 auto 22px}
+  .links a:focus-visible,.contact a:focus-visible,a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">PokerSplit · Support</p>
+    <h1>Help &amp; Support</h1>
+    <p class="lede">Answers to common questions. If you don't find what you need, email us.</p>
+  </header>
+  <div class="contact">
+    <a href="mailto:support@berry-shops.com?subject=PokerSplit">
+      <p class="k">Email support</p>
+      <p class="v">support@berry-shops.com</p>
+      <p class="s">Please include your iPhone model and iOS version.</p>
+    </a>
+    <a href="privacy-policy.html">
+      <p class="k">Privacy</p>
+      <p class="v">Privacy Policy →</p>
+      <p class="s">Your games stay with you.</p>
+    </a>
+  </div>
+  <h2 class="sec">Playing a game</h2>
+  <details>
+    <summary>How do I start a game?</summary>
+    <div class="ans"><p>Tap <strong>＋</strong> on the home screen, set the buy-in and chips, and add your players.</p></div>
+  </details>
+  <details>
+    <summary>How do I record a buy-in or rebuy?</summary>
+    <div class="ans"><p>Open the game and tap a player. From there you can buy in, return chips, borrow, lend or repay.</p></div>
+  </details>
+  <details>
+    <summary>How do loans between players work?</summary>
+    <div class="ans"><p>Record a loan when one player gives chips to another, and record every repayment so it isn't counted twice. Unpaid loans are included when you settle, so nobody pays twice.</p></div>
+  </details>
+  <details>
+    <summary>Can someone join late?</summary>
+    <div class="ans"><p>Yes. Open the game and tap the <strong>person +</strong> button.</p></div>
+  </details>
+  <h2 class="sec">Settling up</h2>
+  <details>
+    <summary>How do I cash out?</summary>
+    <div class="ans"><p>Count each player's chips and enter them, or enter 0 for anyone who busted. When the chips balance, tap <strong>Settle Up</strong>.</p></div>
+  </details>
+  <details>
+    <summary>The chips don't balance. What now?</summary>
+    <div class="ans"><p>The chips counted don't match the chips the bank handed out. Recount the stacks, then check for a missing buy-in or return.</p></div>
+  </details>
+  <details>
+    <summary>What does Result mean?</summary>
+    <div class="ans"><p>Result = Ended with − Put in. Plus means you won, and minus means you lost. Put in is what you bought from the bank, plus chips borrowed, minus chips lent or returned.</p></div>
+  </details>
+  <details>
+    <summary>Does PokerSplit move money?</summary>
+    <div class="ans"><p>No. It only does the math. Your group pays each other however you like, and you can tick payments off in the checklist.</p></div>
+  </details>
+  <h2 class="sec">iCloud and your data</h2>
+  <details>
+    <summary>How do I move my games to a new phone?</summary>
+    <div class="ans"><p>With <strong>Sync with iCloud</strong> on, sign in with the same Apple Account on the new phone. You can also use <strong>Settings → Restore from iCloud</strong>.</p></div>
+  </details>
+  <details>
+    <summary>Sync isn't working.</summary>
+    <div class="ans"><p>Check that you're signed in to iCloud and online, then try <strong>Settings → Sync Now</strong> in PokerSplit.</p></div>
+  </details>
+  <details>
+    <summary>How do I delete my games?</summary>
+    <div class="ans"><p>Delete one from the home screen, or use <strong>Settings → Delete All Games</strong>. With sync on, this also removes them from iCloud and your other devices. It can't be undone.</p></div>
+  </details>
+  <details>
+    <summary>How do I hide store promotions?</summary>
+    <div class="ans"><p>Turn off <strong>Show Promotions</strong> in Settings, under Our Other Stores.</p></div>
+  </details>
+
+  <footer>© 2026 Berry Shops LLC, California, USA · <a href="privacy-policy.html">Privacy Policy</a> · <a href="./">PokerSplit</a></footer>
+</div>
+</body>
+</html>

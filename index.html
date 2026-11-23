@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PokerSplit: Home Game</title>
+<meta name="description" content="Track buy-ins, loans and cash-outs at your home poker game.">
+<link rel="icon" href="icon.png">
+<style>
+  :root{
+    --bg:#f6f3e8; --surface:#fffdf6;
+    --ink:#1d2620; --muted:#5a6459; --faint:#737c6f;
+    --line:#e6dfc9; --line-strong:#d3c9a9;
+    --accent:#b8902f; --accent-deep:#0c5a36; --accent-soft:#e8f1e6;
+    --radius:14px; color-scheme:light dark;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#07261a; --surface:#0e3626; --ink:#f6efdb; --muted:#b9c7b6; --faint:#93a592;
+      --line:#1b4a35; --line-strong:#2b6148; --accent:#d9b457; --accent-deep:#ecce7e; --accent-soft:#123f2c;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#07261a; --surface:#0e3626; --ink:#f6efdb; --muted:#b9c7b6; --faint:#93a592;
+    --line:#1b4a35; --line-strong:#2b6148; --accent:#d9b457; --accent-deep:#ecce7e; --accent-soft:#123f2c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; min-height:100dvh; background:var(--bg); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:24px;}
+  .card{max-width:520px; width:100%; text-align:center}
+  .eyebrow{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12px;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--accent-deep); font-weight:600; margin:0 0 14px}
+  h1{font-size:clamp(32px,7vw,48px); letter-spacing:-.02em; margin:0 0 12px; font-weight:800}
+  p.lede{color:var(--muted); font-size:17px; line-height:1.6; margin:0 auto 30px; max-width:40ch}
+  .links{display:flex; flex-wrap:wrap; gap:12px; justify-content:center}
+  .links a{text-decoration:none; background:var(--surface); border:1px solid var(--line-strong);
+    border-radius:var(--radius); padding:14px 22px; color:var(--accent-deep); font-weight:700;
+    transition:border-color .18s ease}
+  .links a:hover{border-color:var(--accent)}
+  footer{margin-top:38px; color:var(--faint); font-size:13px}
+
+  h1{font-family:"New York","Iowan Old Style",Georgia,serif}
+  .icon{width:112px; height:112px; border-radius:25px; display:block; margin:0 auto 22px}
+  .links a:focus-visible,.contact a:focus-visible,a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="icon" src="icon.png" alt="PokerSplit app icon" width="112" height="112">
+    <p class="eyebrow">Home Game</p>
+    <h1>PokerSplit</h1>
+    <p class="lede">Track buy-ins, chip loans and cash-outs at your home poker game, then see exactly who pays whom.</p>
+    <div class="links">
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+    <footer>© 2026 Berry Shops LLC · California, USA</footer>
+  </div>
+</body>
+</html>
